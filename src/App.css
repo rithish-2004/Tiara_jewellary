@@ -1,0 +1,308 @@
+body {
+  overflow: hidden;
+}
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+.tempbutton{
+  margin-top: 100px;
+  width: 300px;
+  height: 100px;
+  color: black;
+}
+.left-half{
+  flex: 1; 
+  border: 1px solid #ccc; 
+  padding: 20px; 
+}
+.right-half{
+  flex: 1; 
+  background: #fff0db;
+}
+.mainheading{
+  font-family: 'Playfair Display', serif;
+  font-weight: 1000;
+  font-size: 60px;
+  color:darkblue;
+  margin-top: 130px;
+}
+.inplayout{
+  margin-top: 80px;
+}
+.inpdiv{
+  width: 320px;
+  height: 60px;
+  margin-right: 30px;
+}
+.inpdiv1{
+  width: 320px;
+  height: 60px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+#righthalf {
+  background: linear-gradient(45deg, #f5f5dc,#e7b87a);
+}
+
+.login-button{
+  color: #DAE0F2;
+  background-color:rgb(35, 189, 35);
+  border-radius:30px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 300px;
+  margin-left:-25px;
+  height: 60px;
+  font-size: 25px;
+}
+login-status{
+  color: red;
+  font-weight: bold;
+  font-size: 20px; 
+}
+/* Media query for screens up to 1024px width */
+@media only screen and (max-width: 1024px) {
+  .App {
+    flex-direction: column;
+  }
+  .login-button{
+    width: 70%;
+    margin-left: 5px;
+  }
+  .left-half,
+  .right-half {
+    flex: 1;
+  }
+  .inpdiv{
+    width: 70%;
+    margin-right: 0;
+  }
+  .inpdiv1 {
+    width: 70%;
+    margin-right: 0;
+  }
+
+  .forgot-password {
+    margin-left: 0;
+  }
+
+  .left-half {
+    display: none; /* Hide the left-half */
+  }
+
+  .right-half {
+    flex: 2;
+    background: #242325;
+    position: relative;
+  }
+ .mainheading{
+  align-items: center;
+  margin-top:170px;
+  font-size: 40px;
+ }
+ .right-half::before {
+  content: '';
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  background: url("./images/tiara2.png") center/cover no-repeat; /* Add your small logo */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  bottom: 5px; /* Keep 5px from the bottom */
+}
+
+}
+.breadcrumb-container {
+  text-align: center;
+  padding: 0px; /* Adjust as needed */
+}
+
+/* Increase the height and width as needed */
+.ant-breadcrumb {
+  height:10%;
+  width: 380%;
+  font-size: 25px;
+  size: 20px;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for breadcrumb items */
+.ant-breadcrumb-item {
+  font-size: 18px; /* Adjust as needed */
+  color: #333; /* Adjust the color as needed */
+}
+
+.ant-breadcrumb-link {
+  color: #1890ff; /* Adjust the color as needed */
+}
+
+/* Adjust the size of the separator (icon) and its background on hover */
+.ant-breadcrumb-separator {
+  font-size: 24px; /* Adjust the font size of the icon */
+}
+
+/* Adjust the background size on hover */
+.ant-breadcrumb-separator:hover {
+  background-size: 24px 24px; /* Set the same size as the font size of the icon */
+}
+@media only screen and (max-width: 1002px) {
+  .ant-breadcrumb {
+    height: auto;
+    width: 100%;
+    font-size: 30px;
+    padding: 10px; /* Adjust as needed */
+  }
+
+  .ant-breadcrumb-item {
+    font-size: 16px;
+  }
+
+  .ant-breadcrumb-separator {
+    font-size: 20px;
+    background-size: 20px 20px;
+  }
+}
+/* App.css */
+
+/* Default styles */
+.header {
+  background: goldenrod;
+  color: black;
+}
+
+.menu {
+  background: goldenrod;
+  color:goldenrod;
+  font-size: 40px;
+}
+
+.icon {
+  font-size: 30px;
+  color: black;
+}
+
+.menu-item {
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+  background-color: goldenrod;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu {
+    font-size: 30px;
+    color: goldenrod;
+  }
+
+  .icon {
+    font-size: 24px;
+    color: goldenrod;
+  }
+
+  .menu-item {
+    font-size: 20px;
+    color: goldenrod;
+  }
+  ant-menu-submenu-title {
+    color: rgb(253, 253, 253) !important; /* Set the text color */
+  }
+  
+  .ant-menu-submenu-title svg {
+    fill:black!important; /* Set the icon color to white */
+  }
+  
+  /* If you want to set the size of the icon */
+  .ant-menu-submenu-title svg {
+    width: 20px;
+    height: 20px;
+  }
+  .ant-menu-submenu-popup .ant-menu-item .ant-menu-item-icon,
+  .ant-menu-submenu-popup .ant-menu-item .ant-menu-item-icon > svg {
+    fill: black!important; /* Set the icon color to white */
+  }
+  .ant-menu-submenu-title,
+.ant-menu-item {
+  background-color: goldenrod !important; /* Set the background color for submenu title and dropdown menu items */
+}
+
+}
+
+.logo1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left:5;
+  width:45px;
+  height:45px;
+  margin-bottom:25px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* This ensures the container takes the full height of the viewport */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.page-container {
+  background:goldenrod;
+}
+.formcon {
+  background: goldenrod;
+  padding: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.ant-form-item {
+  margin-bottom: 16px !important;
+}
+
+.subbtn {
+  margin-top: 15px;
+  background-color: green; /* Change to your desired green color */
+  color: white; /* Set text color to white or another contrasting color */
+  padding: 10px; /* Adjust padding as needed */
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px;
+}
+
+
+/* Media query for screens smaller than 600px (adjust as needed) */
+@media only screen and (max-width: 600px) {
+  .formcon {
+    padding: 15px; /* Adjusted padding for smaller screens */
+    width: 90%;
+  }
+  .subbtn{
+    margin-top: 25px;
+  }
+}

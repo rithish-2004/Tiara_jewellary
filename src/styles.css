@@ -1,0 +1,94 @@
+/* styles.css */
+body{
+    overflow:hidden;
+}
+.container {
+    width: 100%;
+    
+    padding: 20px;
+    background-color: goldenrod; /* Set background color of the container to goldenrod */
+    color: black; /* Set text color of the container to black */
+    /*border-radius: 50px;*/
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  /* Button styles */
+  .ant-btn {
+    width: 120px; /* Set a fixed width for all buttons */
+  }
+  
+  /* Arrow styling for indicating more records */
+  .arrow {
+    text-align: center;
+    margin-top: 16px;
+    color: #999; /* Set arrow color to gray or any color you prefer */
+  }
+  
+  /* Table styles */
+  .ant-table {
+    margin-top: 20px; /* Add space from the top of the table */
+    background-color: goldenrod; /* Set background color of the table to goldenrod */
+  }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 10px); /* Set maximum width of the container */
+    margin: 5px; /* Set margins to 5px on all sides */
+    padding: 10px; /* Set padding to 10px on all sides */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .ant-table {
+    width: 100%; /* Set table width to 100% of its container */
+    margin-bottom: 10px; /* Add some space between table and buttons */
+  }
+
+  .ant-btn {
+    width: 100%; /* Set buttons to occupy full width on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-table {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  }
+
+  .ant-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 700px) {
+    .ant-btn {
+      width: auto;
+      margin-bottom: 0;
+      margin-right: 8px;
+    }
+
+    .ant-btn:last-child {
+      margin-right: 0;
+    }
+  }
+}
